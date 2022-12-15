@@ -1,0 +1,5 @@
+lightGray = "#353b48"
+darkGray = "#2f3640"
+correct = "#44bd32"
+incorrect = "#c23616"
+background = "#718093"
