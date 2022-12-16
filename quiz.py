@@ -26,7 +26,10 @@ class quiz:
 
     def save(self):
         if self.savePath == None:
-            self.savePath = filedialog.asksaveasfile().name
+            try:
+                self.savePath = filedialog.asksaveasfile().name
+            except Exception as e:
+                print(f"FAILED TO SAVE... \n{e}")
 
         try:
             with open(self.savePath, 'w') as file:
