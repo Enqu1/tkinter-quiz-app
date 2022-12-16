@@ -132,9 +132,9 @@ class app:
                     else:
                         answerIndexes.append(index)
 
-                width = math.floor(self.root.winfo_width() / len(val) / 12)
+                width = round(self.root.winfo_width() / len(val) / 12)
 
-                frame = tk.Frame(questionsGrid, bg=styles.darkGray)
+                frame = tk.Frame(questionsGrid, bg=styles.background)
 
                 button = tk.Button(frame, text=answer, font=("Arial", 13, "bold"), bg=styles.darkGray, fg="white", height=5, width=width,
                                 wraplength=width*6, bd=0, activebackground=styles.lightGray, activeforeground="white")
